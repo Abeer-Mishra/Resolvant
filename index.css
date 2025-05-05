@@ -5,15 +5,16 @@
   font-family: "Inter", sans-serif;
 }
 
+:root {
+  --bg-gradient: linear-gradient(to bottom right, #03001c, #0c0640);
+  --dark-blue: #0c0640;
+}
+
 body,
 html {
   height: 100%;
   overflow: hidden;
-  background: linear-gradient(
-    to bottom right,
-    #03001c,
-    #0c0640
-  ); /* ✅ Gradient background */
+  background-image: var(--bg-gradient); /* ✅ Gradient background */
   color: white; /* ✅ Text color fix */
 }
 
@@ -101,7 +102,7 @@ button {
   font-size: 1.1rem;
   font-weight: 600;
   background-color: white;
-  color: #0c0640;
+  color: var(--dark-blue);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -110,7 +111,7 @@ button {
 }
 
 button:hover {
-  background-color: #0c0640;
+  background-color: var(--dark-blue);
   color: white;
 }
 
