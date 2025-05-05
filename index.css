@@ -14,7 +14,7 @@
 body,
 html {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: var(--bg-gradient); /* ✅ Gradient background */
   color: white; /* ✅ Text color fix */
 }
@@ -208,4 +208,8 @@ button a {
     transform: scale(1.2);
     text-shadow: 0 0 12px #00c9ff;
   }
+}
+
+.about {
+  padding-top: 100%;
 }
