@@ -69,28 +69,23 @@ nav li a:hover::after {
 
 .content {
   position: relative;
-  text-align: center;
-  top: 43%;
-  transform: translateY(-50%);
+  text-align: center; /* Centers inline or inline-block content */
+  top: 50%; /* Adjust for vertical centering */
+  transform: translateY(-50%); /* Adjust for vertical centering */
   z-index: 2;
 }
 
 .transparent-box {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  padding: 20px 20px;
+  padding: 20px; /* Reduced padding for better fit */
   width: 800px;
   height: 250px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #f1f1f1;
   border-radius: 50px;
   z-index: 1;
+  margin: 0 auto;
+  margin-top: 12%;
 }
 
 h1 {
@@ -134,7 +129,7 @@ button a {
 
 .scroll {
   position: absolute;
-  bottom: 20%;
+  bottom: 18%;
   left: 50%;
   color: #fff;
   transform: translate(0, -50%);
@@ -190,7 +185,7 @@ button a {
 .scroll-down {
   font-size: 1rem;
   text-align: center;
-  margin-top: 0rem;
+  margin-top: 01rem;
   animation: pulse 2s infinite;
   color: #00c9ff;
   z-index: 3;
@@ -210,6 +205,27 @@ button a {
   }
 }
 
-.about {
-  padding-top: 100%;
+.about-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 80%;
+  border: 1px solid #ddd;
+  z-index: 3;
+  margin-top: 1000px;
+}
+
+.about-card h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
